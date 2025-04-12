@@ -71,6 +71,7 @@ header .edition {
   justify-content: center;
   align-items: center;
 }
+/* Em telas maiores, o botão de hamburger permanece oculto */
 .menu .hamburger-container {
   display: none;
 }
@@ -238,44 +239,15 @@ li {
   article.news-article h3 {
     font-size: 1.4em;
   }
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
+  /* Remover a funcionalidade de menu hamburger em telas menores */
   .menu .hamburger-container {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: 100%;
-    padding: 0 10px;
-  }
-  .menu .hamburger {
-    width: 30px;
-    height: 25px;
-    position: relative;
-    margin-right: 10px;
-  }
-  .menu .hamburger span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background: #fff;
-    margin: 5px 0;
-    transition: 0.4s;
-  }
-  .menu .menu-label {
-    font-size: 1.2em;
-    color: #fff;
+    display: none !important;
   }
   .menu ul {
+    display: flex !important;
     flex-direction: column;
     width: 100%;
-    display: none;
     margin-top: 10px;
-  }
-  .menu.open ul {
-    display: flex;
   }
   .menu ul li {
     margin: 10px 0;
