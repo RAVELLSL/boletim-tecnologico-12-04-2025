@@ -102,6 +102,8 @@ header .edition {
 /* News Sections */
 .news-section {
   display: none;
+  margin: 0 auto;
+  text-align: left;
 }
 .news-section h2 {
   font-family: 'Courier Prime', monospace;
@@ -233,13 +235,21 @@ li {
   header h1 {
     font-size: 2.2em;
   }
+  header .edition {
+    font-size: 1.4em;
+  }
   .news-section h2 {
     font-size: 1.8em;
   }
   article.news-article h3 {
     font-size: 1.4em;
   }
-  /* Remover a funcionalidade de menu hamburger em telas menores */
+  /* Centralizar seções em telas menores */
+  .news-section {
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* Ajuste do menu: manter sem o menu hamburger */
   .menu .hamburger-container {
     display: none !important;
   }
@@ -251,11 +261,16 @@ li {
   }
   .menu ul li {
     margin: 10px 0;
-    text-align: left;
-    padding-left: 20px;
+    text-align: center;
+    padding: 0;
   }
   .menu ul li a {
     font-size: 1.2em;
+  }
+  /* Ajuste do modal para telas menores */
+  .modal-content {
+    width: 85%;
+    max-width: 600px;
   }
 }
 
@@ -279,7 +294,7 @@ li {
     height: auto;
   }
   .modal-content {
-    width: 95%;
+    width: 85%;
     padding: 15px;
   }
   .accordion-header {
